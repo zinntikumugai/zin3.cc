@@ -7,113 +7,50 @@ h2 {
 
 a {
     text-decoration: none;
-    color: black;
     font-size: large;
+    color: rgb(239, 239, 239);
 }
 
 .twitter {
     background-color: rgb(4, 4, 37);
 }
-.twitter a {
-    color: rgb(239, 239, 239);
-}
-.twitter p {
-    color:  rgb(4, 4, 37);
-}
-.twitter:hover p {
-    color: rgb(239, 239, 239);
-}
 
 .bluesky {
     background-color: #1185FE;
-}
-.bluesky a {
-    color: rgb(239, 239, 239);
-}
-.bluesky p {
-    color:  #1185FE;
-}
-.bluesky:hover p {
-    color: rgb(239, 239, 239);
 }
 
 .misskey {
     background-color: rgb(25, 35, 32);
 }
-.misskey a {
-    color: rgb(239, 239, 239);
-}
-.misskey p {
-    color: rgb(25, 35, 32);
-}
-.misskey:hover p {
-    color: rgb(239, 239, 239);
-}
 
 .discord {
     background-color: #313338;
-}
-.discord a {
-    color: rgb(239, 239, 239);
-}
-.discord p {
-    color: #313338;
-}
-.discord:hover p {
-    color: rgb(239, 239, 239);
 }
 
 .steam {
     background-color: #192B3D;
 }
-.steam a {
-    color: rgb(239, 239, 239);
-}
-.steam p {
-    color: #192B3D;
-}
-.steam:hover p {
-    color: rgb(239, 239, 239);
-}
 
 .vrchat {
     background-color: #07242B;
-}
-.vrchat a {
-    color: rgb(239, 239, 239);
-}
-.vrchat p {
-    color: #07242B;
-}
-.vrchat:hover p {
-    color: rgb(239, 239, 239);
 }
 
 
 .blog-zin3 {
     background-color: #707070;
 }
-.blog-zin3 a {
-    color: rgb(239, 239, 239);
-}
 
 .blog-sub {
     background-color: #232325;
 }
-.blog-sub a {
-    color: rgb(239, 239, 239);
-}
 
 .github {
     background-color: #010409;
-}
-.github a {
-    color: rgb(239, 239, 239);
 }
 
 .gitlab {
     background-color: #FFFFFF;
 }
 .gitlab a {
-    color: rgb(16, 15, 15);
+    color: black;
 }
