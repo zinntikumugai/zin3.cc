@@ -1,6 +1,7 @@
 body {
     background-color: #fff4fe;
 }
+
 h2 {
     height: 50px;
 }
@@ -35,7 +36,6 @@ a {
     background-color: #07242B;
 }
 
-
 .blog-zin3 {
     background-color: #707070;
 }
@@ -51,6 +51,7 @@ a {
 .gitlab {
     background-color: #FFFFFF;
 }
+
 .gitlab a {
     color: black;
 }
