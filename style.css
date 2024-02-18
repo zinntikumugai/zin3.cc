@@ -1,0 +1,51 @@
+body {
+    background-color: #fff4fe;
+}
+h2 {
+    height: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: large;
+}
+
+.twitter {
+    background-color: rgb(4, 4, 37);
+}
+.twitter a {
+    color: white;
+}
+.twitter p {
+    color:  rgb(4, 4, 37);
+}
+.twitter:hover p {
+    color: white;
+}
+
+.bluesky {
+    background-color: #1185FE;
+}
+.bluesky a {
+    color: white;
+}
+.bluesky p {
+    color:  #1185FE;
+}
+.bluesky:hover p {
+    color: white;
+}
+
+.misskey {
+    background-color: rgb(25, 35, 32);
+}
+.misskey a {
+    color: white;
+}
+.misskey p {
+    color: rgb(25, 35, 32);
+}
+.misskey:hover p {
+    color: white;
+}
