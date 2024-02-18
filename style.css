@@ -88,3 +88,32 @@ a {
 .vrchat:hover p {
     color: rgb(239, 239, 239);
 }
+
+
+.blog-zin3 {
+    background-color: #707070;
+}
+.blog-zin3 a {
+    color: rgb(239, 239, 239);
+}
+
+.blog-sub {
+    background-color: #232325;
+}
+.blog-sub a {
+    color: rgb(239, 239, 239);
+}
+
+.github {
+    background-color: #010409;
+}
+.github a {
+    color: rgb(239, 239, 239);
+}
+
+.gitlab {
+    background-color: #FFFFFF;
+}
+.gitlab a {
+    color: rgb(16, 15, 15);
+}
