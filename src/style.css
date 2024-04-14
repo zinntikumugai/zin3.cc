@@ -1,4 +1,4 @@
-body {
+:root {
     background-color: #fff4fe;
     font-family: "Noto Sans JP", sans-serif;
     font-optical-sizing: auto;
@@ -6,11 +6,12 @@ body {
     font-style: normal;
 }
 
-h2 {
+:root h2 {
     height: 50px;
 }
 
-a {
+
+:root a {
     text-decoration: none;
     font-size: large;
     color: rgb(239, 239, 239);
