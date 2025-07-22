@@ -1,34 +1,32 @@
 {
-  "$schema": "https://tkytel.github.io/mantela/0.1/mantela.schema.json",
-  "version": "0.1.0",
-  "aboutMe": {
-    "name": "zin3",
-    "preferredPrefix": [
-      "333"
-    ],
-    "identifier": "498a3211-0f85-42a7-b2c0-44fb7095bd67",
-    "geolocationCoordinates": {
-      "latitude": 0,
-      "longitude": 0,
-      "altitude": 0,
-      "accuracy": 0,
-      "altitudeAccuracy": 0
-    },
-    "sipUsername": "SIP-TRUNK-924132C8"
-  },
-  "extensions": [
-    {
-      "name": "zin3",
-      "extension": "333",
-      "type": "phone",
-      "identifier": "OCXO1M0X"
-    },
-    {
-      "name": "読み上げ君",
-      "extension": "123",
-      "type": "information",
-      "identifier": "2X8V9417"
-    }
-  ],
-  "providers": []
+	"$schema": "https://tkytel.github.io/mantela/0.1/mantela.schema.json",
+	"version": "0.1.0",
+	"aboutMe": {
+		"name": "zin3",
+		"preferredPrefix": ["333"],
+		"identifier": "498a3211-0f85-42a7-b2c0-44fb7095bd67",
+		"geolocationCoordinates": {
+			"latitude": 0,
+			"longitude": 0,
+			"altitude": 0,
+			"accuracy": 0,
+			"altitudeAccuracy": 0
+		},
+		"sipUsername": "SIP-TRUNK-924132C8"
+	},
+	"extensions": [
+		{
+			"name": "zin3",
+			"extension": "333",
+			"type": "phone",
+			"identifier": "OCXO1M0X"
+		},
+		{
+			"name": "読み上げ君",
+			"extension": "123",
+			"type": "information",
+			"identifier": "2X8V9417"
+		}
+	],
+	"providers": []
 }
