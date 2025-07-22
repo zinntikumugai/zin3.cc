@@ -44,7 +44,7 @@ describe('+page.svelte', () => {
 		);
 
 		// Check for PlayStore icon
-		const playStoreIcon = link.querySelector('img[alt*="Play Store"], svg, .playstore-icon');
+		const playStoreIcon = link.querySelector('i.fa-google-play, i.fab.fa-google-play');
 		expect(playStoreIcon).toBeTruthy();
 	});
 });

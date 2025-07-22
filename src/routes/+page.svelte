@@ -105,18 +105,7 @@
 				</div>
 				<div class="unipostor pb-3 pt-5">
 					<a href="https://play.google.com/store/apps/details?id=cc.zin3.uni_poster">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							width="20"
-							height="20"
-							viewBox="0 0 24 24"
-							fill="currentColor"
-							class="mr-2 inline-block"
-						>
-							<path
-								d="M3 20.5v-17c0-.83.67-1.5 1.5-1.5.385 0 .735.145 1 .385l11.115 11.115-11.115 11.115c-.265.24-.615.385-1 .385-.83 0-1.5-.67-1.5-1.5zm18.5-10.5l-4.385-2.46L7.5 12l9.615 4.46L21.5 14c.67-.37.67-1.63 0-2z"
-							/>
-						</svg>
+						<i class="fab fa-google-play mr-2"></i>
 						<h3 class="inline-block">UniPostor</h3>
 					</a>
 				</div>
