@@ -39,17 +39,16 @@ describe('PoE+++++ page', () => {
 		);
 	});
 
-	it('should have X (Twitter) link', () => {
+	it('should have X (Twitter) embedded tweet', () => {
 		render(Page);
 
-		const xLink = screen.getByRole('link', {
-			name: 'https://x.com/uesitananame55/status/1932771723914719349'
-		});
-		expect(xLink).toBeInTheDocument();
-		expect(xLink).toHaveAttribute(
-			'href',
-			'https://x.com/uesitananame55/status/1932771723914719349'
-		);
+		const tweetBlockquote = document.querySelector('blockquote.twitter-tweet');
+		expect(tweetBlockquote).toBeTruthy();
+		
+		// Check if tweet content exists within the blockquote
+		const tweetContent = tweetBlockquote?.querySelector('p');
+		expect(tweetContent?.textContent).toContain('Power over Ethernet +++++');
+		expect(tweetContent?.textContent).toContain('100vで流せるようにしときました');
 	});
 
 	it('should have Booth section and link', () => {
