@@ -26,28 +26,26 @@
 			<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 		</div>
 
-		<div class="mb-6">
-			<h3 class="mb-2 text-xl font-bold">Booth</h3>
-			<a
-				href="https://zin3.booth.pm/"
-				class="text-black hover:underline"
-				target="_blank"
-				rel="noopener noreferrer"
-			>
-				https://zin3.booth.pm/
-			</a>
-		</div>
-
 		<div class="mb-8">
-			<h3 class="mb-2 text-xl font-bold">SUZURI</h3>
-			<a
-				href="https://suzuri.jp/zin3/products"
-				class="text-black hover:underline"
-				target="_blank"
-				rel="noopener noreferrer"
-			>
-				https://suzuri.jp/zin3/products
-			</a>
+			<p class="mb-4 text-lg">購入はこちらからどうぞ</p>
+			<div class="flex gap-4">
+				<a
+					href="https://zin3.booth.pm/"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="hover:opacity-80 transition-opacity"
+				>
+					<img src="/icons/booth.svg" alt="Booth" width="48" height="48" />
+				</a>
+				<a
+					href="https://suzuri.jp/zin3/products"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="hover:opacity-80 transition-opacity"
+				>
+					<img src="/icons/suzuri.svg" alt="SUZURI" width="48" height="48" />
+				</a>
+			</div>
 		</div>
 	</div>
 

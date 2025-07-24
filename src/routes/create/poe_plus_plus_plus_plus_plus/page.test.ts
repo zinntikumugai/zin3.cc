@@ -50,26 +50,29 @@ describe('PoE+++++ page', () => {
 		expect(tweetContent?.textContent).toContain('Tシャツﾄﾄﾞｲﾀ');
 	});
 
-	it('should have Booth section and link', () => {
+	it('should have purchase section with icons', () => {
 		render(Page);
 
-		const boothHeading = screen.getByRole('heading', { name: 'Booth', level: 3 });
-		expect(boothHeading).toBeInTheDocument();
+		// Check for purchase text
+		expect(screen.getByText('購入はこちらからどうぞ')).toBeInTheDocument();
 
-		const boothLink = screen.getByRole('link', { name: 'https://zin3.booth.pm/' });
+		// Check for Booth icon link
+		const boothLink = screen.getByRole('link', { name: 'Booth' });
 		expect(boothLink).toBeInTheDocument();
 		expect(boothLink).toHaveAttribute('href', 'https://zin3.booth.pm/');
-	});
+		
+		const boothImg = boothLink.querySelector('img');
+		expect(boothImg).toHaveAttribute('src', '/icons/booth.svg');
+		expect(boothImg).toHaveAttribute('alt', 'Booth');
 
-	it('should have SUZURI section and link', () => {
-		render(Page);
-
-		const suzuriHeading = screen.getByRole('heading', { name: 'SUZURI', level: 3 });
-		expect(suzuriHeading).toBeInTheDocument();
-
-		const suzuriLink = screen.getByRole('link', { name: 'https://suzuri.jp/zin3/products' });
+		// Check for SUZURI icon link
+		const suzuriLink = screen.getByRole('link', { name: 'SUZURI' });
 		expect(suzuriLink).toBeInTheDocument();
 		expect(suzuriLink).toHaveAttribute('href', 'https://suzuri.jp/zin3/products');
+		
+		const suzuriImg = suzuriLink.querySelector('img');
+		expect(suzuriImg).toHaveAttribute('src', '/icons/suzuri.svg');
+		expect(suzuriImg).toHaveAttribute('alt', 'SUZURI');
 	});
 
 	it('should have back to top link', () => {
