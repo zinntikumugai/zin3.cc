@@ -22,7 +22,7 @@
 		<div class="mb-4">
 			<a
 				href="https://x.com/uesitananame55/status/1932771723914719349"
-				class="break-all text-blue-600 hover:underline"
+				class="break-all text-black hover:underline"
 				target="_blank"
 				rel="noopener noreferrer"
 			>
@@ -34,7 +34,7 @@
 			<h3 class="mb-2 text-xl font-bold">Booth</h3>
 			<a
 				href="https://zin3.booth.pm/"
-				class="text-blue-600 hover:underline"
+				class="text-black hover:underline"
 				target="_blank"
 				rel="noopener noreferrer"
 			>
@@ -46,7 +46,7 @@
 			<h3 class="mb-2 text-xl font-bold">SUZURI</h3>
 			<a
 				href="https://suzuri.jp/zin3/products"
-				class="text-blue-600 hover:underline"
+				class="text-black hover:underline"
 				target="_blank"
 				rel="noopener noreferrer"
 			>
