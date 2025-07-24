@@ -21,7 +21,7 @@
 
 		<div class="mb-4">
 			<blockquote class="twitter-tweet">
-				<p lang="ja" dir="ltr">Power over Ethernet +++++<br><br>LANケーブルで電源を確保するPoE<br>そんなもので電力足りますか？<br>足りませんよね？<br>100vで流せるようにしときました <a href="https://t.co/pxLrJGDVkD">pic.twitter.com/pxLrJGDVkD</a></p>&mdash; じんさん (@uesitananame55) <a href="https://twitter.com/uesitananame55/status/1932771723914719349?ref_src=twsrc%5Etfw">December 3, 2024</a>
+				<p lang="ja" dir="ltr">Tシャツﾄﾄﾞｲﾀ <a href="https://t.co/pxLrJGDVkD">pic.twitter.com/pxLrJGDVkD</a></p>&mdash; じんさん (@uesitananame55) <a href="https://twitter.com/uesitananame55/status/1932771723914719349?ref_src=twsrc%5Etfw">December 3, 2024</a>
 			</blockquote>
 			<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 		</div>

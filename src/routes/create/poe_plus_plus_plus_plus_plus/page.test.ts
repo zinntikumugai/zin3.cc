@@ -47,8 +47,7 @@ describe('PoE+++++ page', () => {
 		
 		// Check if tweet content exists within the blockquote
 		const tweetContent = tweetBlockquote?.querySelector('p');
-		expect(tweetContent?.textContent).toContain('Power over Ethernet +++++');
-		expect(tweetContent?.textContent).toContain('100vで流せるようにしときました');
+		expect(tweetContent?.textContent).toContain('Tシャツﾄﾄﾞｲﾀ');
 	});
 
 	it('should have Booth section and link', () => {
