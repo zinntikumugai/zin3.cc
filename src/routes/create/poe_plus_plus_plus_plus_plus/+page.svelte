@@ -28,22 +28,22 @@
 
 		<div class="mb-8">
 			<p class="mb-4 text-lg">購入はこちらからどうぞ</p>
-			<div class="flex gap-4">
+			<div class="flex gap-6">
 				<a
 					href="https://zin3.booth.pm/"
 					target="_blank"
 					rel="noopener noreferrer"
-					class="hover:opacity-80 transition-opacity"
+					class="hover:opacity-80 transition-opacity block p-2"
 				>
-					<img src="./icons/booth-logo.png" alt="Booth" width="48" height="48" />
+					<img src="/icons/booth-logo.png" alt="Booth" height="48" class="h-12 w-auto" />
 				</a>
 				<a
 					href="https://suzuri.jp/zin3/products"
 					target="_blank"
 					rel="noopener noreferrer"
-					class="hover:opacity-80 transition-opacity"
+					class="hover:opacity-80 transition-opacity block p-2"
 				>
-					<img src="./icons/suzuri-logo.png" alt="SUZURI" width="48" height="48" />
+					<img src="/icons/suzuri-logo.png" alt="SUZURI" height="48" class="h-12 w-auto" />
 				</a>
 			</div>
 		</div>
