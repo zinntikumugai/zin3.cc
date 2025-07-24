@@ -35,7 +35,7 @@
 					rel="noopener noreferrer"
 					class="hover:opacity-80 transition-opacity"
 				>
-					<img src="/icons/booth.svg" alt="Booth" width="48" height="48" />
+					<img src="./icons/booth-logo.png" alt="Booth" width="48" height="48" />
 				</a>
 				<a
 					href="https://suzuri.jp/zin3/products"
@@ -43,7 +43,7 @@
 					rel="noopener noreferrer"
 					class="hover:opacity-80 transition-opacity"
 				>
-					<img src="/icons/suzuri.svg" alt="SUZURI" width="48" height="48" />
+					<img src="./icons/suzuri-logo.png" alt="SUZURI" width="48" height="48" />
 				</a>
 			</div>
 		</div>

@@ -62,7 +62,7 @@ describe('PoE+++++ page', () => {
 		expect(boothLink).toHaveAttribute('href', 'https://zin3.booth.pm/');
 		
 		const boothImg = boothLink.querySelector('img');
-		expect(boothImg).toHaveAttribute('src', '/icons/booth.svg');
+		expect(boothImg).toHaveAttribute('src', './icons/booth-logo.png');
 		expect(boothImg).toHaveAttribute('alt', 'Booth');
 
 		// Check for SUZURI icon link
@@ -71,7 +71,7 @@ describe('PoE+++++ page', () => {
 		expect(suzuriLink).toHaveAttribute('href', 'https://suzuri.jp/zin3/products');
 		
 		const suzuriImg = suzuriLink.querySelector('img');
-		expect(suzuriImg).toHaveAttribute('src', '/icons/suzuri.svg');
+		expect(suzuriImg).toHaveAttribute('src', './icons/suzuri-logo.png');
 		expect(suzuriImg).toHaveAttribute('alt', 'SUZURI');
 	});
 
