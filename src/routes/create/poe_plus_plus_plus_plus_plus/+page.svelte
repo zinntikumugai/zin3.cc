@@ -1,6 +1,14 @@
 <div class="container mx-auto max-w-4xl px-4 py-8">
 	<h1 class="mb-6 text-3xl font-bold">Power over Ethernet +++++</h1>
 
+	<div class="mb-6">
+		<img
+			src="https://pbs.twimg.com/media/GtKVo2tbMAA0Lfl?format=jpg&name=4096x4096"
+			alt="画像"
+			class="h-auto max-w-full rounded-lg shadow-lg"
+		/>
+	</div>
+
 	<div class="prose mb-8 max-w-none">
 		<p>LANケーブルを使って電力を供給するPoE。</p>
 		<p>でも今の時代その程度で足りますか？足りませんよね</p>
@@ -10,14 +18,6 @@
 
 	<div class="mb-8">
 		<h2 class="mb-4 text-2xl font-bold">Links</h2>
-
-		<div class="mb-6">
-			<img
-				src="https://pbs.twimg.com/media/GtKVo2tbMAA0Lfl?format=jpg&name=4096x4096"
-				alt="画像"
-				class="h-auto max-w-full rounded-lg shadow-lg"
-			/>
-		</div>
 
 		<div class="mb-4">
 			<blockquote class="twitter-tweet">
