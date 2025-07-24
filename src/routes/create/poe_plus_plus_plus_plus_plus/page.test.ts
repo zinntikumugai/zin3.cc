@@ -1,0 +1,84 @@
+import { describe, it, expect } from 'vitest';
+import { render, screen } from '@testing-library/svelte';
+import Page from './+page.svelte';
+
+describe('PoE+++++ page', () => {
+	it('should have the correct title', () => {
+		render(Page);
+
+		const title = screen.getByRole('heading', { name: 'Power over Ethernet +++++', level: 1 });
+		expect(title).toBeInTheDocument();
+	});
+
+	it('should have description text', () => {
+		render(Page);
+
+		expect(screen.getByText(/LANケーブルを使って電力を供給するPoE/)).toBeInTheDocument();
+		expect(
+			screen.getByText(/でも今の時代その程度で足りますか？足りませんよね/)
+		).toBeInTheDocument();
+		expect(screen.getByText(/ということで100vで流せるようにしておきました/)).toBeInTheDocument();
+		expect(screen.getByText(/\(PoEで100vは実在しません\)/)).toBeInTheDocument();
+	});
+
+	it('should have Links heading', () => {
+		render(Page);
+
+		const linksHeading = screen.getByRole('heading', { name: 'Links', level: 2 });
+		expect(linksHeading).toBeInTheDocument();
+	});
+
+	it('should have image with correct src', () => {
+		render(Page);
+
+		const image = screen.getByAltText('画像');
+		expect(image).toBeInTheDocument();
+		expect(image).toHaveAttribute(
+			'src',
+			'https://pbs.twimg.com/media/GtKVo2tbMAA0Lfl?format=jpg&name=4096x4096'
+		);
+	});
+
+	it('should have X (Twitter) link', () => {
+		render(Page);
+
+		const xLink = screen.getByRole('link', {
+			name: 'https://x.com/uesitananame55/status/1932771723914719349'
+		});
+		expect(xLink).toBeInTheDocument();
+		expect(xLink).toHaveAttribute(
+			'href',
+			'https://x.com/uesitananame55/status/1932771723914719349'
+		);
+	});
+
+	it('should have Booth section and link', () => {
+		render(Page);
+
+		const boothHeading = screen.getByRole('heading', { name: 'Booth', level: 3 });
+		expect(boothHeading).toBeInTheDocument();
+
+		const boothLink = screen.getByRole('link', { name: 'https://zin3.booth.pm/' });
+		expect(boothLink).toBeInTheDocument();
+		expect(boothLink).toHaveAttribute('href', 'https://zin3.booth.pm/');
+	});
+
+	it('should have SUZURI section and link', () => {
+		render(Page);
+
+		const suzuriHeading = screen.getByRole('heading', { name: 'SUZURI', level: 3 });
+		expect(suzuriHeading).toBeInTheDocument();
+
+		const suzuriLink = screen.getByRole('link', { name: 'https://suzuri.jp/zin3/products' });
+		expect(suzuriLink).toBeInTheDocument();
+		expect(suzuriLink).toHaveAttribute('href', 'https://suzuri.jp/zin3/products');
+	});
+
+	it('should have back to top link', () => {
+		render(Page);
+
+		const backLink = screen.getByRole('link', { name: 'トップへ戻る' });
+		expect(backLink).toBeInTheDocument();
+		expect(backLink).toHaveAttribute('href', '/');
+	});
+});

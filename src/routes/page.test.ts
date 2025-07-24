@@ -47,4 +47,12 @@ describe('+page.svelte', () => {
 		const playStoreIcon = link.querySelector('i.fa-google-play, i.fab.fa-google-play');
 		expect(playStoreIcon).toBeTruthy();
 	});
+
+	it('should have PoE+++++ link in Create section', () => {
+		render(Page);
+
+		const link = screen.getByRole('link', { name: 'PoE+++++' });
+		expect(link).toBeInTheDocument();
+		expect(link).toHaveAttribute('href', '/create/poe_plus_plus_plus_plus_plus');
+	});
 });
