@@ -1,3 +1,23 @@
+<script lang="ts">
+	import type { PageData } from './$types';
+
+	export let data: PageData;
+</script>
+
+<svelte:head>
+	<title>{data.meta.title}</title>
+	<meta name="description" content={data.meta.description} />
+	<meta property="og:title" content={data.meta.title} />
+	<meta property="og:description" content={data.meta.description} />
+	<meta property="og:image" content={data.meta.ogImage} />
+	<meta property="og:url" content={`https://zin3.cc${data.meta.url}`} />
+	<meta property="og:type" content="website" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content={data.meta.title} />
+	<meta name="twitter:description" content={data.meta.description} />
+	<meta name="twitter:image" content={data.meta.ogImage} />
+</svelte:head>
+
 <div class="container mx-auto max-w-4xl px-4 py-8">
 	<h1 class="mb-6 text-3xl font-bold">Power over Ethernet +++++</h1>
 
