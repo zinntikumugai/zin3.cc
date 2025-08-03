@@ -114,6 +114,11 @@
 						<h3>PoE+++++</h3>
 					</a>
 				</div>
+				<div class="domain-list pb-3 pt-5">
+					<a href="https://domains.zin3.cc/">
+						<h3>ドメイン一覧</h3>
+					</a>
+				</div>
 			</div>
 		</div>
 

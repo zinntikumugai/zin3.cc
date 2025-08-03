@@ -55,4 +55,12 @@ describe('+page.svelte', () => {
 		expect(link).toBeInTheDocument();
 		expect(link).toHaveAttribute('href', '/create/poe_plus_plus_plus_plus_plus');
 	});
+
+	it('should have ドメイン一覧 link in Create section', () => {
+		render(Page);
+
+		const link = screen.getByRole('link', { name: 'ドメイン一覧' });
+		expect(link).toBeInTheDocument();
+		expect(link).toHaveAttribute('href', 'https://domains.zin3.cc/');
+	});
 });
