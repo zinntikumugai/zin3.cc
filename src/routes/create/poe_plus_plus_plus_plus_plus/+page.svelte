@@ -41,7 +41,13 @@
 
 		<div class="mb-4">
 			<blockquote class="twitter-tweet">
-				<p lang="ja" dir="ltr">Tシャツﾄﾄﾞｲﾀ <a href="https://t.co/pxLrJGDVkD">pic.twitter.com/pxLrJGDVkD</a></p>&mdash; じんさん (@uesitananame55) <a href="https://twitter.com/uesitananame55/status/1932771723914719349?ref_src=twsrc%5Etfw">December 3, 2024</a>
+				<p lang="ja" dir="ltr">
+					Tシャツﾄﾄﾞｲﾀ <a href="https://t.co/pxLrJGDVkD">pic.twitter.com/pxLrJGDVkD</a>
+				</p>
+				&mdash; じんさん (@uesitananame55)<a
+					href="https://twitter.com/uesitananame55/status/1932771723914719349?ref_src=twsrc%5Etfw"
+					>December 3, 2024</a
+				>
 			</blockquote>
 			<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 		</div>
@@ -53,7 +59,7 @@
 					href="https://zin3.booth.pm/"
 					target="_blank"
 					rel="noopener noreferrer"
-					class="hover:opacity-80 transition-opacity block p-2"
+					class="block p-2 transition-opacity hover:opacity-80"
 				>
 					<img src="/icons/booth-logo.png" alt="Booth" height="48" class="h-12 w-auto" />
 				</a>
@@ -61,7 +67,7 @@
 					href="https://suzuri.jp/zin3/products"
 					target="_blank"
 					rel="noopener noreferrer"
-					class="hover:opacity-80 transition-opacity block p-2"
+					class="block p-2 transition-opacity hover:opacity-80"
 				>
 					<img src="/icons/suzuri-logo.png" alt="SUZURI" height="48" class="h-12 w-auto" />
 				</a>
