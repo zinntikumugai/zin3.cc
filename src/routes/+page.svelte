@@ -44,6 +44,12 @@
 						<p>zin3</p>
 					</a>
 				</div>
+				<div class="nostr pb-3 pt-5">
+					<a href="https://iris.to/npub1zln33396vq76an8ce075w8fqxqjhtgqfwsm6fnyt9s7gmzysw9qqhdpcgc">
+						<h3>nostr</h3>
+						<p>zin3@zin3.cc</p>
+					</a>
+				</div>
 			</div>
 		</div>
 

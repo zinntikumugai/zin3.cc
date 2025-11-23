@@ -95,3 +95,8 @@
 .domain-list a {
 	color: white;
 }
+
+.nostr {
+	background-color: #9e3beb;
+	color: black;
+}
