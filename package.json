@@ -15,6 +15,7 @@
 		"test:unit": "vitest run",
 		"test:e2e": "echo 'Playwright未導入'",
 		"test:all": "npm run test:unit",
+		"test:coverage": "vitest run --coverage",
 		"format:check": "biome format .",
 		"typecheck": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json"
 	},
@@ -28,6 +29,7 @@
 		"@testing-library/jest-dom": "^6.6.3",
 		"@testing-library/svelte": "^5.2.8",
 		"@types/node": "^20.12.7",
+		"@vitest/coverage-v8": "^3.2.4",
 		"jsdom": "^26.1.0",
 		"postcss": "^8.4.32",
 		"postcss-load-config": "^5.0.2",
