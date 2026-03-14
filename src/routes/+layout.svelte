@@ -1,7 +1,7 @@
 <script lang="ts">
 	import '../app.pcss';
-	import { PUBLIC_GTM_ID } from '$env/static/public';
 	import { onMount } from 'svelte';
+	import { PUBLIC_GTM_ID } from '$env/static/public';
 
 	onMount(() => {
 		if (PUBLIC_GTM_ID && typeof window !== 'undefined') {
