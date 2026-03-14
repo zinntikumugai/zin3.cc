@@ -1,7 +1,9 @@
 <script lang="ts">
 	import '../app.pcss';
-	import { onMount } from 'svelte';
+	import { onMount, type Snippet } from 'svelte';
 	import { PUBLIC_GTM_ID } from '$env/static/public';
+
+	let { children }: { children: Snippet } = $props();
 
 	onMount(() => {
 		if (PUBLIC_GTM_ID && typeof window !== 'undefined') {
@@ -37,4 +39,4 @@
 	{/if}
 </svelte:head>
 
-<slot></slot>
+{@render children()}
