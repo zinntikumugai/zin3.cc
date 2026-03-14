@@ -1,5 +1,5 @@
 <script lang="ts">
-	import '../app.pcss';
+	import '../app.css';
 	import { onMount, type Snippet } from 'svelte';
 	import { PUBLIC_GTM_ID } from '$env/static/public';
 
