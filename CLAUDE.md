@@ -30,12 +30,21 @@ npm run build
 npm run preview
 
 # Type checking
-npm run check          # Single run
+npm run check          # Single run (svelte-check)
 npm run check:watch    # Watch mode
+npm run typecheck      # svelte-kit sync + svelte-check
 
-# Code quality
-npm run lint           # Check formatting and linting
-npm run format         # Auto-format code
+# Code quality (Biome)
+npm run lint           # Biomeによるlintチェック (biome check .)
+npm run format         # Biomeによる自動フォーマット (biome format --write .)
+npm run format:check   # フォーマットチェックのみ (biome format --check .)
+
+# Testing (Vitest)
+npm run test           # Vitest watchモード
+npm run test:run       # Vitest 単発実行
+npm run test:unit      # ユニットテスト実行 (vitest run)
+npm run test:e2e       # E2Eテスト (Playwright未導入)
+npm run test:all       # 全テスト実行 (現在はunit のみ)
 ```
 
 ## Architecture Overview
