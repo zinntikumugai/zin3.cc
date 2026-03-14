@@ -1,0 +1,16 @@
+pre-commit:
+  parallel: true
+  commands:
+    biome-check:
+      glob: "*.{js,ts,json,jsonc}"
+      run: npx biome check --no-errors-on-unmatched {staged_files}
+    biome-format:
+      glob: "*.{js,ts,json,jsonc}"
+      run: npx biome format --no-errors-on-unmatched --check {staged_files}
+    typecheck:
+      run: npx svelte-kit sync && npx svelte-check --tsconfig ./tsconfig.json
+
+pre-push:
+  commands:
+    test:
+      run: npx vitest run
