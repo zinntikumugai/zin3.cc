@@ -1,13 +1,12 @@
 {
 	"$schema": "https://biomejs.dev/schemas/2.4.7/schema.json",
+	"vcs": {
+		"enabled": true,
+		"clientKind": "git",
+		"useIgnoreFile": true
+	},
 	"files": {
-		"includes": ["**"],
-		"experimentalScannerIgnores": [
-			"node_modules/**",
-			".svelte-kit/**",
-			"build/**",
-			".claude/**"
-		]
+		"includes": ["**"]
 	},
 	"formatter": {
 		"enabled": true,
@@ -29,7 +28,16 @@
 	},
 	"overrides": [
 		{
-			"includes": ["*.svelte", "*.css", "*.html", "*.pcss"],
+			"includes": ["**/*.svelte", "**/*.css", "**/*.html", "**/*.pcss"],
+			"formatter": {
+				"enabled": false
+			},
+			"linter": {
+				"enabled": false
+			}
+		},
+		{
+			"includes": [".claude/**"],
 			"formatter": {
 				"enabled": false
 			},
