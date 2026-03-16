@@ -42,7 +42,7 @@
 				href="https://play.google.com/store/apps/details?id=cc.zin3.uni_poster"
 				target="_blank"
 				rel="noopener noreferrer"
-				class="block p-2 transition-opacity hover:opacity-80"
+				class="inline-flex items-center gap-2 rounded-lg bg-gray-800 px-6 py-3 text-white transition-colors hover:bg-gray-700"
 			>
 				<i class="fab fa-google-play"></i> Google Play
 			</a>
@@ -50,7 +50,7 @@
 				href="https://apps.apple.com/jp/app/uni-poster/id6747512031"
 				target="_blank"
 				rel="noopener noreferrer"
-				class="block p-2 transition-opacity hover:opacity-80"
+				class="inline-flex items-center gap-2 rounded-lg bg-gray-800 px-6 py-3 text-white transition-colors hover:bg-gray-700"
 			>
 				<i class="fab fa-apple"></i> App Store
 			</a>
