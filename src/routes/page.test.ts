@@ -158,16 +158,11 @@ describe('+page.svelte', () => {
 			expect(link).toHaveAttribute('href', 'https://ulo.ooo');
 		});
 
-		it('should have UniPostor link with PlayStore icon in Create section', () => {
+		it('should have Uni Poster link to internal page in Create section', () => {
 			render(Page);
-			const link = screen.getByRole('link', { name: /UniPostor/i });
+			const link = screen.getByRole('link', { name: /Uni Poster/i });
 			expect(link).toBeInTheDocument();
-			expect(link).toHaveAttribute(
-				'href',
-				'https://play.google.com/store/apps/details?id=cc.zin3.uni_poster'
-			);
-			const playStoreIcon = link.querySelector('i.fa-google-play, i.fab.fa-google-play');
-			expect(playStoreIcon).toBeTruthy();
+			expect(link).toHaveAttribute('href', '/create/uniposter');
 		});
 
 		it('should have PoE+++++ link in Create section', () => {

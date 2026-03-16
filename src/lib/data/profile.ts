@@ -162,10 +162,9 @@ export const profile: Profile = {
 					cssClass: 'ulo'
 				},
 				{
-					name: 'UniPostor',
-					url: 'https://play.google.com/store/apps/details?id=cc.zin3.uni_poster',
-					cssClass: 'unipostor',
-					icon: 'fab fa-google-play'
+					name: 'Uni Poster',
+					url: '/create/uniposter',
+					cssClass: 'unipostor'
 				},
 				{
 					name: 'PoE+++++',

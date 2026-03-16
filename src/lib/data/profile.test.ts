@@ -193,11 +193,12 @@ describe('profile data', () => {
 			expect(item?.url).toBe('https://ulo.ooo');
 		});
 
-		it('should have UniPostor link with icon', () => {
+		it('should have Uni Poster link as internal page', () => {
 			const create = profile.sections.find((s) => s.id === 'create');
-			const item = create?.items.find((i) => i.name === 'UniPostor');
-			expect(item?.url).toBe('https://play.google.com/store/apps/details?id=cc.zin3.uni_poster');
-			expect(item?.icon).toBe('fab fa-google-play');
+			const item = create?.items.find((i) => i.name === 'Uni Poster');
+			expect(item?.url).toBe('/create/uniposter');
+			expect(item?.cssClass).toBe('unipostor');
+			expect(item?.icon).toBeUndefined();
 		});
 
 		it('should have PoE+++++ link', () => {
