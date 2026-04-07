@@ -1,32 +1,80 @@
 {
-	"$schema": "https://tkytel.github.io/mantela/0.1/mantela.schema.json",
-	"version": "0.1.0",
-	"aboutMe": {
-		"name": "zin3",
-		"preferredPrefix": ["333"],
-		"identifier": "498a3211-0f85-42a7-b2c0-44fb7095bd67",
-		"geolocationCoordinates": {
-			"latitude": 0,
-			"longitude": 0,
-			"altitude": 0,
-			"accuracy": 0,
-			"altitudeAccuracy": 0
-		},
-		"sipUsername": "SIP-TRUNK-924132C8"
-	},
-	"extensions": [
-		{
-			"name": "zin3",
-			"extension": "333",
-			"type": "phone",
-			"identifier": "OCXO1M0X"
-		},
-		{
-			"name": "読み上げ君",
-			"extension": "123",
-			"type": "information",
-			"identifier": "2X8V9417"
-		}
-	],
-	"providers": []
+  "$schema": "https://tkytel.github.io/mantela/0.1/mantela.schema.json",
+  "aboutMe": {
+    "geolocationCoordinates": {
+      "accuracy": 0,
+      "altitude": 0,
+      "altitudeAccuracy": 0,
+      "latitude": 0,
+      "longitude": 0
+    },
+    "identifier": "498a3211-0f85-42a7-b2c0-44fb7095bd67",
+    "name": "zin3",
+    "preferredPrefix": [
+      "333"
+    ],
+    "sipUsername": "SIP-TRUNK-924132C8"
+  },
+  "extensions": [
+    {
+      "extension": "333",
+      "identifier": "OCXO1M0X",
+      "name": "zin3",
+      "type": "phone"
+    },
+    {
+      "extension": "123",
+      "identifier": "2X8V9417",
+      "name": "読み上げ君",
+      "type": "information"
+    },
+    {
+      "extension": "335",
+      "identifier": "LJ87S6MQ",
+      "model": "PALDiO 316S",
+      "name": "ドラえホン",
+      "type": "cellphone",
+      "unavailable": false
+    },
+    {
+      "extension": "336",
+      "identifier": "0OQ3LEKQ",
+      "model": "601-P",
+      "name": "普通の電話",
+      "type": "pushphone"
+    }
+  ],
+  "providers": [
+    {
+      "identifier": "5752ca4c-c828-4946-a8f3-7f8272206f2d",
+      "mantela": "https://da-tenshi.github.io/mantela.json",
+      "name": "SHINANOTEL",
+      "prefix": "661"
+    },
+    {
+      "identifier": "8b741e2b-45f9-4187-9da1-05d866b79a09",
+      "mantela": "https://kimkim0106.net/.well-known/mantela.json",
+      "name": "kimkim0106",
+      "prefix": "106"
+    },
+    {
+      "identifier": "93b2d256-39c1-4053-bda1-c0643dd40690",
+      "mantela": "https://unstable.kusaremkn.com/.well-known/mantela.json",
+      "name": "MikaNeTEL",
+      "prefix": "510"
+    },
+    {
+      "identifier": "530251dc-0f93-4226-89c8-d71f900a1f0b",
+      "mantela": "https://tkytel-8931.f5.si/.well-known/mantela.json",
+      "name": "はくさい局",
+      "prefix": "891"
+    },
+    {
+      "identifier": "3be47f94-3185-4198-ac3d-ca5ccb573cc2",
+      "mantela": "https://www.yude.jp.eu.org/.well-known/mantela.json",
+      "name": "yudetel",
+      "prefix": "390"
+    }
+  ],
+  "version": "0.1.0"
 }
