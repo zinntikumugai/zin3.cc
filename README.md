@@ -12,6 +12,11 @@
 - **react-icons**（ブランドアイコン）・**@fontsource**（フォントのセルフホスト）
 - パッケージマネージャ: **pnpm**
 
+## 前提
+
+- **Node.js 24**（`mise.toml` / `.node-version` で `24.18.0` に固定）。[mise](https://mise.jdx.dev/) 利用時は `mise install` でセットアップ。
+- **pnpm 11**（`packageManager` で固定。corepack: `corepack enable pnpm`）。
+
 ## 開発コマンド
 
 ```bash
