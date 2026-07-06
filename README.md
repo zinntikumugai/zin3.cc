@@ -54,5 +54,10 @@ pnpm format       # 自動整形
 
 ## メモ
 
-- ホームのプロフィール画像 `public/profile.svg` は暫定プレースホルダ。実写真に差し替える場合は画像を `public/` に置き、`src/pages/Home.tsx`（および `src/pages/Poe.tsx`）の `src` を更新する。
+- 外部画像はホットリンク（自己ホストせず URL 参照）：
+  - プロフィール画像 … X のプロフィール画像（`src/data/site.ts` の `PROFILE_IMG`）
+  - Blog カードのアイコン … zinntikumugai.com の favicon（`src/data/sections.ts` の `iconImg`）
+  - UniPostor スクショ … App Store（mzstatic）の画像（`src/pages/UniPostor.tsx`）
+  - PoE のツイート … `react-tweet` によるライブ埋め込み
+    自己ホストしたい場合は各画像を `public/` に保存し、参照先を差し替える。
 - Google Tag Manager を使う場合は `.env` に `VITE_GTM_ID` を設定する。

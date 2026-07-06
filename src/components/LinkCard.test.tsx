@@ -56,4 +56,18 @@ describe('LinkCard', () => {
 		renderWithProviders(<LinkCard item={letterOnly} />);
 		expect(screen.getByText('N')).toBeInTheDocument();
 	});
+
+	it('iconImg 指定時は画像アイコンを表示する', () => {
+		const withImg: LinkItem = {
+			name: 'Blog',
+			handle: 'じんさんです!',
+			href: 'https://www.zinntikumugai.com/',
+			color: '#2b96a5',
+			letter: 'B',
+			iconImg: 'https://example.com/favicon.png'
+		};
+		const { container } = renderWithProviders(<LinkCard item={withImg} />);
+		const img = container.querySelector('img[src="https://example.com/favicon.png"]');
+		expect(img).toBeInTheDocument();
+	});
 });

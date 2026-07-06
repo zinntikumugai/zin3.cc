@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import { playerEmbed, slideThumb, talks } from '../data/talks';
+import { eventLinkLabel, playerEmbed, slideThumb, talks } from '../data/talks';
 
 export function Lt() {
 	const [open, setOpen] = useState<number>(-1);
@@ -247,7 +247,7 @@ export function Lt() {
 												rel="noopener noreferrer"
 												sx={{ color: '#7f5fb5', fontWeight: 700, textDecoration: 'none' }}
 											>
-												イベントページ（connpass）↗
+												{eventLinkLabel(t.eventUrl)}
 											</Box>
 										)}
 									</Box>

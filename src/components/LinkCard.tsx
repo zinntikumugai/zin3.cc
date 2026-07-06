@@ -69,10 +69,23 @@ export function LinkCard({ item }: { item: LinkItem }) {
 					justifyContent: 'center',
 					color: '#fff',
 					fontWeight: 700,
-					fontSize: 16
+					fontSize: 16,
+					overflow: 'hidden'
 				}}
 			>
-				{Icon ? <Icon size={20} color="#fff" /> : item.letter}
+				{item.iconImg ? (
+					<Box
+						component="img"
+						src={item.iconImg}
+						alt=""
+						loading="lazy"
+						sx={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+					/>
+				) : Icon ? (
+					<Icon size={20} color="#fff" />
+				) : (
+					item.letter
+				)}
 			</Box>
 			<Box sx={{ minWidth: 0 }}>
 				<Typography

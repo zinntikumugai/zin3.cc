@@ -1,10 +1,14 @@
 import { Link as RouterLink } from 'react-router-dom';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
+import { Tweet } from 'react-tweet';
+import { useColorMode } from '../theme/ColorModeProvider';
 
 const OG_IMAGE = 'https://pbs.twimg.com/media/GtKVo2tbMAA0Lfl?format=jpg&name=medium';
+const TWEET_ID = '1932771723914719349';
 
 export function Poe() {
+	const { effective } = useColorMode();
 	return (
 		<Box sx={{ maxWidth: 760, mx: 'auto' }}>
 			<title>PoE+++++ — zin3.cc</title>
@@ -94,53 +98,15 @@ export function Poe() {
 			</Box>
 
 			<Box
-				component="a"
-				href="https://twitter.com/uesitananame55/status/1932771723914719349"
-				target="_blank"
-				rel="noopener noreferrer"
+				data-theme={effective}
 				sx={{
-					display: 'block',
-					bgcolor: 'background.paper',
-					border: '1px solid',
-					borderColor: 'bd',
-					borderRadius: '16px',
-					p: '18px 20px',
-					textDecoration: 'none',
-					transition: 'transform .2s',
-					'&:hover': { transform: 'translateY(-2px)' }
+					mt: '20px',
+					display: 'flex',
+					justifyContent: 'center',
+					'& .react-tweet-theme': { margin: 0, maxWidth: '100%' }
 				}}
 			>
-				<Box sx={{ display: 'flex', alignItems: 'center', gap: '10px', mb: '8px' }}>
-					<Box
-						component="img"
-						src="/profile.svg"
-						alt=""
-						sx={{ width: 34, height: 34, borderRadius: '50%', objectFit: 'cover' }}
-					/>
-					<Box>
-						<Box
-							component="span"
-							sx={{ display: 'block', fontSize: 13.5, fontWeight: 700, color: 'text.primary' }}
-						>
-							じんさん
-						</Box>
-						<Box component="span" sx={{ display: 'block', fontSize: 12, color: 'text.secondary' }}>
-							@uesitananame55 · 2024/12/03
-						</Box>
-					</Box>
-					<Box
-						component="span"
-						sx={{ ml: 'auto', fontWeight: 900, fontSize: 16, color: 'text.primary' }}
-					>
-						𝕏
-					</Box>
-				</Box>
-				<Typography sx={{ m: 0, mb: '6px', fontSize: 14.5, color: 'text.primary' }}>
-					Tシャツﾄﾄﾞｲﾀ
-				</Typography>
-				<Typography sx={{ m: 0, fontSize: 12.5, color: 'text.secondary' }}>
-					RT 439 · いいね 1,417
-				</Typography>
+				<Tweet id={TWEET_ID} />
 			</Box>
 
 			<Box sx={{ pt: '30px', pb: '8px' }}>

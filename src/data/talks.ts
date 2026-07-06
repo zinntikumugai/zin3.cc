@@ -28,7 +28,7 @@ export const talks: Talk[] = [
 		title: 'サーバーラック入れた話',
 		date: '2026.01.15',
 		event: 'ITインフラ集会 1/3',
-		eventUrl: '',
+		eventUrl: 'https://vrc-ta-hub.com/event/detail/719/',
 		description: '自宅に36Uサーバーラックを導入。選定・搬入・組み立て・設置までの記録。',
 		url: 'https://speakerdeck.com/zin3/sabaratukuru-retahua'
 	},
@@ -37,7 +37,7 @@ export const talks: Talk[] = [
 		title: 'おうちに低遅延な動画配信サーバーをたてる',
 		date: '2025.07.19',
 		event: 'ITインフラ集会 × Vketステージ',
-		eventUrl: '',
+		eventUrl: 'https://vrc-ta-hub.com/event/detail/417/',
 		description:
 			'MEDIAMTXで自宅に低遅延配信サーバーを構築し、VRChatで視聴するまでの手順とプロトコルの話。',
 		url: 'https://speakerdeck.com/zin3/outinidi-chi-yan-nadong-hua-pei-xin-sabawotateru'
@@ -57,7 +57,7 @@ export const talks: Talk[] = [
 		title: 'ﾌﾞﾗｳｻﾞﾎﾟﾁﾎﾟﾁk8s ～Rancher～',
 		date: '2025.03.29',
 		event: 'ITインフラ集会',
-		eventUrl: '',
+		eventUrl: 'https://vrc-ta-hub.com/event/detail/383/',
 		description:
 			'WebUIでk8sをポチポチ管理。Rancherの良いところ・良くないところと落ちにくい構成の話。',
 		url: 'https://speakerdeck.com/zin3/hu-rausa-ho-tiho-tik8s-rancher'
@@ -72,4 +72,11 @@ export function slideThumb(id: string): string {
 /** Speaker Deck の埋め込みプレイヤー URL。 */
 export function playerEmbed(id: string): string {
 	return `https://speakerdeck.com/player/${id}`;
+}
+
+/** イベントURLのホストに応じたリンク文言を返す。 */
+export function eventLinkLabel(url: string): string {
+	if (url.includes('connpass.com')) return 'イベントページ（connpass）↗';
+	if (url.includes('vrc-ta-hub.com')) return 'イベントページ（VRC-TA-Hub）↗';
+	return 'イベントページ ↗';
 }

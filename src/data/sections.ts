@@ -11,6 +11,8 @@ export interface LinkItem {
 	letter: string;
 	/** ブランドアイコン（未指定なら letter を表示）。 */
 	icon?: IconKey;
+	/** 画像アイコン（favicon 等）。icon より優先してタイルに表示する。 */
+	iconImg?: string;
 	/** 外部リンク先。 */
 	href?: string;
 	/** アプリ内ルート（外部 href の代わりに内部遷移させたい項目）。 */
@@ -91,7 +93,9 @@ export const sections: Section[] = [
 				handle: 'じんさんです!',
 				href: 'https://www.zinntikumugai.com/',
 				color: '#2b96a5',
-				letter: 'B'
+				letter: 'B',
+				iconImg:
+					'https://www.zinntikumugai.com/wp-content/uploads/2016/10/cropped-zinntikumugai.com_-192x192.png'
 			},
 			{
 				name: 'sublog',

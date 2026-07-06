@@ -3,12 +3,15 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import { SiApple, SiGoogleplay } from 'react-icons/si';
 
+const APP_STORE_URL = 'https://apps.apple.com/jp/app/uni-poster/id6747512031';
+
+// App Store 掲載のスクリーンショット（mzstatic は末尾のサイズ指定で解像度を変えられる）。
+const SHOT_SIZE = '540x1170bb.webp';
 const shots = [
-	'スクリーンショット①（後で差し替え）',
-	'スクリーンショット②（後で差し替え）',
-	'スクリーンショット③（後で差し替え）',
-	'スクリーンショット④（後で差し替え）'
-];
+	'https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/2b/ce/85/2bce854c-f5c6-2c34-1a57-c0b4585bf1c0/Simulator_Screenshot_-_iPhone_16_Pro_Max_-_2025-08-28_at_23.04.16.png',
+	'https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/34/92/b0/3492b079-3fda-625e-607a-69535b5c76d4/Simulator_Screenshot_-_iPhone_16_Pro_Max_-_2025-08-28_at_23.04.23.png',
+	'https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/1c/b8/e0/1cb8e030-982f-9b05-0621-5a0b5ac39923/Simulator_Screenshot_-_iPhone_16_Pro_Max_-_2025-08-28_at_23.04.35.png'
+].map((base) => `${base}/${SHOT_SIZE}`);
 
 const features = [
 	{ title: '（機能①のタイトル）', body: '（機能の説明を記入）' },
@@ -100,15 +103,12 @@ export function UniPostor() {
 					glow="rgba(58,181,93,.6)"
 				/>
 				<StoreButton
-					href="#appstore-url"
+					href={APP_STORE_URL}
 					icon={<SiApple size={24} color="#fff" />}
 					small="Download on the"
 					big="App Store"
 					glow="rgba(43,150,165,.6)"
 				/>
-				<Box component="span" sx={{ alignSelf: 'center', fontSize: 12, color: 'text.secondary' }}>
-					※ App StoreのURLは後で差し替え
-				</Box>
 			</Box>
 
 			<Box sx={{ mb: '34px' }}>
@@ -122,27 +122,24 @@ export function UniPostor() {
 						gap: '14px'
 					}}
 				>
-					{shots.map((label) => (
+					{shots.map((src, i) => (
 						<Box
-							key={label}
+							key={src}
+							component="img"
+							src={src}
+							alt={`UniPostor スクリーンショット${i + 1}`}
+							loading="lazy"
 							sx={{
+								width: '100%',
 								aspectRatio: '9 / 19.5',
+								objectFit: 'cover',
 								bgcolor: 'chip',
-								border: '1px dashed',
-								borderColor: 'bd2',
+								border: '1px solid',
+								borderColor: 'bd',
 								borderRadius: '22px',
-								display: 'flex',
-								alignItems: 'center',
-								justifyContent: 'center',
-								textAlign: 'center',
-								p: '16px',
-								boxSizing: 'border-box'
+								display: 'block'
 							}}
-						>
-							<Box component="span" sx={{ fontSize: 12, lineHeight: 1.7, color: 'text.secondary' }}>
-								{label}
-							</Box>
-						</Box>
+						/>
 					))}
 				</Box>
 			</Box>

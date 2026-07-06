@@ -2,6 +2,7 @@ import { keyframes } from '@emotion/react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import { sections } from '../data/sections';
+import { PROFILE_IMG } from '../data/site';
 import { LinkCard } from '../components/LinkCard';
 
 const floaty = keyframes`
@@ -21,7 +22,7 @@ export function Home() {
 			<Box sx={{ textAlign: 'center', pt: '44px', pb: '40px' }}>
 				<Box
 					component="img"
-					src="/profile.svg"
+					src={PROFILE_IMG}
 					alt="じんさんのアイコン"
 					sx={{
 						width: 104,

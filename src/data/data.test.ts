@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import { sections } from './sections';
-import { playerEmbed, slideThumb, talks } from './talks';
+import { eventLinkLabel, playerEmbed, slideThumb, talks } from './talks';
 
 describe('sections データ', () => {
 	it('5セクション（SNS/Blog/git/gpg/Create）を順に持つ', () => {
@@ -54,5 +54,16 @@ describe('talks データ', () => {
 		const id = talks[0].id;
 		expect(slideThumb(id)).toBe(`https://files.speakerdeck.com/presentations/${id}/slide_0.jpg`);
 		expect(playerEmbed(id)).toBe(`https://speakerdeck.com/player/${id}`);
+	});
+
+	it('イベントURLのホストに応じた文言を返す', () => {
+		expect(eventLinkLabel('https://homeserver.connpass.com/event/394093/')).toContain('connpass');
+		expect(eventLinkLabel('https://vrc-ta-hub.com/event/detail/719/')).toContain('VRC-TA-Hub');
+		expect(eventLinkLabel('https://example.com/e/1')).toBe('イベントページ ↗');
+	});
+
+	it('vrc-ta-hub のイベントURLが付与されている', () => {
+		const rack = talks.find((t) => t.title === 'サーバーラック入れた話')!;
+		expect(rack.eventUrl).toBe('https://vrc-ta-hub.com/event/detail/719/');
 	});
 });
