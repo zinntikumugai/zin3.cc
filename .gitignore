@@ -1,10 +1,12 @@
 .DS_Store
 node_modules
+/dist
 /build
-/.svelte-kit
-/package
+/.wrangler
 .env
 .env.*
 !.env.example
+*.local
+/.playwright-mcp
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
