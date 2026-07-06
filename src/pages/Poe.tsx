@@ -4,7 +4,8 @@ import Typography from '@mui/material/Typography';
 import { Tweet } from 'react-tweet';
 import { useColorMode } from '../theme/ColorModeProvider';
 
-const OG_IMAGE = 'https://pbs.twimg.com/media/GtKVo2tbMAA0Lfl?format=jpg&name=medium';
+const TSHIRT_IMG = '/poe-tshirt.jpg';
+const OG_IMAGE = 'https://zin3.cc/poe-tshirt.jpg';
 const TWEET_ID = '1932771723914719349';
 
 export function Poe() {
@@ -74,7 +75,7 @@ export function Poe() {
 
 			<Box
 				component="img"
-				src={OG_IMAGE}
+				src={TSHIRT_IMG}
 				alt="PoE+++++ Tシャツ"
 				sx={{
 					width: '100%',
