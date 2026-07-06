@@ -5,13 +5,8 @@ import { SiApple, SiGoogleplay } from 'react-icons/si';
 
 const APP_STORE_URL = 'https://apps.apple.com/jp/app/uni-poster/id6747512031';
 
-// App Store 掲載のスクリーンショット（mzstatic は末尾のサイズ指定で解像度を変えられる）。
-const SHOT_SIZE = '540x1170bb.webp';
-const shots = [
-	'https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/2b/ce/85/2bce854c-f5c6-2c34-1a57-c0b4585bf1c0/Simulator_Screenshot_-_iPhone_16_Pro_Max_-_2025-08-28_at_23.04.16.png',
-	'https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/34/92/b0/3492b079-3fda-625e-607a-69535b5c76d4/Simulator_Screenshot_-_iPhone_16_Pro_Max_-_2025-08-28_at_23.04.23.png',
-	'https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/1c/b8/e0/1cb8e030-982f-9b05-0621-5a0b5ac39923/Simulator_Screenshot_-_iPhone_16_Pro_Max_-_2025-08-28_at_23.04.35.png'
-].map((base) => `${base}/${SHOT_SIZE}`);
+// App Store 掲載のスクリーンショットをローカルに保存したもの（public/unipostor/）。
+const shots = ['/unipostor/shot1.webp', '/unipostor/shot2.webp', '/unipostor/shot3.webp'];
 
 const features = [
 	{
@@ -24,7 +19,7 @@ const features = [
 	},
 	{
 		title: 'iOS / Android 対応',
-		body: 'zin3.io製のFlutterアプリ。iOS・Android どちらの端末でも使えます。'
+		body: 'iOS・Android どちらの端末でも使えます。'
 	}
 ];
 
@@ -96,8 +91,6 @@ export function UniPostor() {
 				</Typography>
 				<Typography sx={{ m: 0, fontSize: 15, lineHeight: 1.9, color: 'text.secondary' }}>
 					複数のSNSに一括投稿できるアプリ。お知らせなどを複数のアプリを切り替えて投稿するのは不便——本アプリならワンステップで同時投稿できます。
-					<br />
-					zin3.io製・Flutterアプリ。iOS / Android 両対応。
 				</Typography>
 			</Box>
 
