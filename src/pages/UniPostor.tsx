@@ -14,9 +14,18 @@ const shots = [
 ].map((base) => `${base}/${SHOT_SIZE}`);
 
 const features = [
-	{ title: '（機能①のタイトル）', body: '（機能の説明を記入）' },
-	{ title: '（機能②のタイトル）', body: '（機能の説明を記入）' },
-	{ title: '（機能③のタイトル）', body: '（機能の説明を記入）' }
+	{
+		title: '一括投稿',
+		body: '複数のSNSプラットフォームへワンステップで同時投稿。アプリを切り替える手間がありません。'
+	},
+	{
+		title: '対応プラットフォーム',
+		body: 'X (Twitter) / Misskey / Bluesky / Mastodon / Nostr に対応。'
+	},
+	{
+		title: 'iOS / Android 対応',
+		body: 'zin3.io製のFlutterアプリ。iOS・Android どちらの端末でも使えます。'
+	}
 ];
 
 const sectionHeading = {
@@ -35,7 +44,7 @@ export function UniPostor() {
 			<title>UniPostor — zin3.cc</title>
 			<meta
 				name="description"
-				content="zin3.io製のFlutterアプリ UniPostor（iOS / Android 対応）の紹介ページ。"
+				content="複数のSNS（X / Misskey / Bluesky / Mastodon / Nostr）に一括投稿できる zin3.io製アプリ UniPostor。iOS / Android 対応。"
 			/>
 
 			<Box
@@ -86,7 +95,7 @@ export function UniPostor() {
 					UniPostor
 				</Typography>
 				<Typography sx={{ m: 0, fontSize: 15, lineHeight: 1.9, color: 'text.secondary' }}>
-					（アプリのキャッチコピーを記入 — 例：投稿をもっとかんたんに）
+					複数のSNSに一括投稿できるアプリ。お知らせなどを複数のアプリを切り替えて投稿するのは不便——本アプリならワンステップで同時投稿できます。
 					<br />
 					zin3.io製・Flutterアプリ。iOS / Android 両対応。
 				</Typography>
