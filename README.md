@@ -1,38 +1,63 @@
-# create-svelte
+# zin3.cc
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+じんさん（zin3）のポートフォリオサイト。React 19 + MUI + Vite（SPA）で構築し、Cloudflare Pages にデプロイする。
 
-## Creating a project
+## 技術スタック
 
-If you're seeing this, you've probably already done this step. Congrats!
+- **React 19** + **TypeScript**
+- **MUI v9**（`@mui/material` / emotion）+ カスタムテーマ（auto / light / dark）
+- **react-router v7**（SPA ルーティング）
+- **Vite 8**（ビルド / 開発サーバ）
+- **Vitest 4** + **React Testing Library**（テスト）
+- **react-icons**（ブランドアイコン）・**@fontsource**（フォントのセルフホスト）
+- パッケージマネージャ: **pnpm**
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## 前提
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+- **Node.js 24**（`mise.toml` / `.node-version` で `24.18.0` に固定）。[mise](https://mise.jdx.dev/) 利用時は `mise install` でセットアップ。
+- **pnpm 11**（`packageManager` で固定。corepack: `corepack enable pnpm`）。
 
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
+## 開発コマンド
 
 ```bash
-npm run build
+pnpm install      # 依存インストール
+pnpm dev          # 開発サーバ
+pnpm build        # 本番ビルド（tsc 型チェック + vite build → dist/）
+pnpm preview      # ビルド成果物のプレビュー
+pnpm check        # 型チェック
+pnpm test         # テスト（watch）
+pnpm test:run     # テスト（1回）
+pnpm lint         # prettier + eslint
+pnpm format       # 自動整形
 ```
 
-You can preview the production build with `npm run preview`.
+## ルーティング
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+- `/` — ホーム（プロフィール + SNS / Blog / git / gpg / Create のリンク）
+- `/lt` — LT実績（Speaker Deck 埋め込み）
+- `/create/unipostor` — UniPostor（アプリ紹介）
+- `/create/poe_plus_plus_plus_plus_plus` — PoE+++++（ネタTシャツ）
+
+## ディレクトリ
+
+- `src/theme/` — MUI テーマ・カラーモード（`ColorModeProvider`）
+- `src/data/` — リンク・LT実績のデータ
+- `src/components/` — `Layout`（ヘッダ/ナビ/フッタ）・`LinkCard`
+- `src/pages/` — 各画面
+- `public/` — 静的アセット（favicon・アイコン・`.well-known/*`・`_redirects` 等）
+
+## デプロイ（Cloudflare Pages）
+
+- Build command: `pnpm run build`
+- Output directory: `dist`
+- `public/_redirects`（`/* /index.html 200`）で SPA フォールバック。
+
+## メモ
+
+- 外部画像はホットリンク（自己ホストせず URL 参照）：
+  - プロフィール画像 … X のプロフィール画像（`src/data/site.ts` の `PROFILE_IMG`）
+  - Blog カードのアイコン … zinntikumugai.com の favicon（`src/data/sections.ts` の `iconImg`）
+  - UniPostor スクショ … App Store（mzstatic）の画像（`src/pages/UniPostor.tsx`）
+  - PoE のツイート … `react-tweet` によるライブ埋め込み
+    自己ホストしたい場合は各画像を `public/` に保存し、参照先を差し替える。
+- Google Tag Manager を使う場合は `.env` に `VITE_GTM_ID` を設定する。
