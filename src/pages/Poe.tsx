@@ -3,9 +3,10 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import { Tweet } from 'react-tweet';
 import { useColorMode } from '../theme/ColorModeProvider';
+import { SITE_URL } from '../data/site';
 
 const TSHIRT_IMG = '/poe-tshirt.jpg';
-const OG_IMAGE = 'https://zin3.cc/poe-tshirt.jpg';
+const OG_IMAGE = `${SITE_URL}${TSHIRT_IMG}`;
 const TWEET_ID = '1932771723914719349';
 
 export function Poe() {
