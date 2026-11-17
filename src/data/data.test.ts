@@ -35,8 +35,8 @@ describe('sections データ', () => {
 });
 
 describe('talks データ', () => {
-	it('5件の登壇を持つ', () => {
-		expect(talks).toHaveLength(5);
+	it('6件の登壇を持つ', () => {
+		expect(talks).toHaveLength(6);
 	});
 
 	it('各トークは id・タイトル・日付・イベント・説明・URL を持つ', () => {

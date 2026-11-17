@@ -15,6 +15,16 @@ export interface Talk {
 
 export const talks: Talk[] = [
 	{
+		id: '38a863aeb76f4246beff3c9c0c74984e',
+		title: 'どうしてこうなった！ 中古ノートPCから始まり、サーバーラックを建てるまで',
+		date: '2026.11.15',
+		event: '自鯖缶 2026',
+		eventUrl: 'https://jisaba.sh/sessions/156cc34f-6613-4ac7-b5a8-a9680d48bcd7/',
+		description:
+			'中古ノートPCからラック建設までの自宅鯖遍歴と、これから始める人向けのマシン・CPU世代の選び方。',
+		url: 'https://speakerdeck.com/zin3/homelab-rack'
+	},
+	{
 		id: '79189818021747da97f324478a7450e7',
 		title: 'バックアップとLTO',
 		date: '2026.06.20',
